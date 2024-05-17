@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+}
+.rock{
+    width:100px;
+    height:100px;
+}
+.paper{
+    width:100px;
+    height:100px;
+}
+.scissors{
+    width:100px;
+    height:100px;
+}
+main{
+    display: flex;
+    width: 100%;
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+#cpu-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}

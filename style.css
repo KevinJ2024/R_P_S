@@ -13,19 +13,52 @@
     width:100px;
     height:100px;
 }
-main{
+body{
+    background-color: #000000;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.scores{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
+    padding: 5px;
+}
+#section1{
+    color: white;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50vh;
+    background-color: aqua;
+    border-radius: 40px;
 }
 #buttons{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
+    height: 50%;
+    padding: 10%;
 }
 #cpu-imgs{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
+    height: 50%;
+    padding: 10%;
 }

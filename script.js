@@ -31,14 +31,24 @@ function winCondition(result) {
         alert("draw")
         console.log("draw")
     } else if (
-        (result == "rock" && cpu =="paper") || (result == "paper" && cpu == "rock") || (result == "scissors" && cpu == "paper") 
+        (result == "paper" && cpu =="rock") || (result == "rock" && cpu == "scissors") || (result == "scissors" && cpu == "paper") 
     ) {
         playerScore+=1;
-        alert ("roud win by player\n you choice: "+result+"\n cpu choice: "+cpu)
+        alert ("roud win by player\n\n you choice: "+result+"\n\n cpu choice: "+cpu)
+        document.getElementById("resPlayer").innerHTML =playerScore
         console.log("player win"+playerScore)
     } else {
         cpuScore+=1;
-        alert ("roud win by cpu\n you choice: "+result+"\n cpu choice: "+cpu)
+        alert ("roud win by cpu\n\n you choice: "+result+"\n\n cpu choice: "+cpu)
+        document.getElementById("resCpu").innerHTML =cpuScore
         console.log("cpu win"+cpuScore)
+    }
+
+    if (playerScore==3) {
+        alert("PLAYER WIN")
+        document.location.reload()
+    }else if(cpuScore==3){
+        alert("CPU WIN")
+        document.location.reload()
     }
 }
